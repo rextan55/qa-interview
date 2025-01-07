@@ -20,6 +20,8 @@ NX Monorepo
 
 Playwright E2E
 
+Vitest
+
 ## Prerequisites
 
 Package Manager: pnpm 8.15.8
