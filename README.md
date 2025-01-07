@@ -58,3 +58,13 @@ Your tests should do the following:
 1. Test that Black pieces are not making illegal moves.
 2. Test that White pieces are not making illegal moves.
 3. Ensure that all possible chess movements are 100% covered.
+
+**Testable Chessboard Configurations**
+http://localhost:4200 -> A chessboard that ensures the user can play a game with legal moves, with white starting first.
+http://localhost:4200/computer -> A chessboard where the computer plays black and you play white. All legal moves should work.
+http://localhost:4200/custom?fen= -> A chessboard that adheres to the "fen" specficiation. This is useful for testing specific board configurations, and doesnt require multiple colors.
+
+
+
+**Hints**
+You don't need to test that every possible square for each piece is accessible

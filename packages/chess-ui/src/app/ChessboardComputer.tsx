@@ -2,7 +2,7 @@ import { Chessboard } from 'react-chessboard';
 import { useState } from 'react';
 import { Chess } from 'chess.js';
 
-export const ChessboardCanvas = () => {
+export const ChessboardComputer = () => {
   const [game, setGame] = useState(new Chess());
 
   function makeAMove(move: any) {
