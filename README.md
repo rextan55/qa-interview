@@ -70,6 +70,7 @@ http://localhost:4200/custom?fen= -> A chessboard that adheres to the "fen" spec
 **Example board states**
 
 [http://localhost:4200/custom?fen=8/8/8/3P4/8/8/8/8 w - - 0 1](http://localhost:4200/custom?fen=8/8/8/3P4/8/8/8/8%20w%20-%20-%200%201)
+
 Summary of Meaning
 -	A white pawn is located at d5.
 -	It is White’s turn to move.
@@ -79,6 +80,7 @@ Summary of Meaning
 -	This is the first full move of the game.
 
 [http://localhost:4200/custom?fen=8/8/8/3P4/3p4/8/8/8 w - - 0 1](http://localhost:4200/custom?fen=8/8/8/3P4/3p4/8/8/8%20w%20-%20-%200%201)
+
 Summary of Meaning
 - A white pawn (P) is at d5.
 - A black pawn (p) is at d4, directly below the white pawn.
