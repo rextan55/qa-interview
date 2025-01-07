@@ -62,9 +62,28 @@ Your tests should do the following:
 **Testable Chessboard Configurations**
 http://localhost:4200 -> A chessboard that ensures the user can play a game with legal moves, with white starting first.
 http://localhost:4200/computer -> A chessboard where the computer plays black and you play white. All legal moves should work.
-http://localhost:4200/custom?fen= -> A chessboard that adheres to the "fen" specficiation. This is useful for testing specific board configurations, and doesnt require multiple colors.
+http://localhost:4200/custom?fen= -> A chessboard that adheres to the "fen" specficiation. This is useful for testing specific board configurations. Its always White's turn.
 
+**Example board states**
 
+[http://localhost:4200/custom?fen=8/8/8/3P4/8/8/8/8 w - - 0 1](http://localhost:4200/custom?fen=8/8/8/3P4/8/8/8/8%20w%20-%20-%200%201)
+Summary of Meaning
+-	A white pawn is located at d5.
+-	It is White’s turn to move.
+-	No castling is possible for either side.
+-	There is no en passant opportunity.
+-	The halfmove clock is at 0, meaning no captures or pawn moves have occurred since this position was set.
+-	This is the first full move of the game.
+
+[http://localhost:4200/custom?fen=8/8/8/3P4/3p4/8/8/8 w - - 0 1](http://localhost:4200/custom?fen=8/8/8/3P4/3p4/8/8/8%20w%20-%20-%200%201)
+Summary of Meaning
+- A white pawn (P) is at d5.
+- A black pawn (p) is at d4, directly below the white pawn.
+- It is White’s turn to move.
+-	No castling is available.
+- No en passant opportunity exists in this position.
+-	The halfmove clock is at 0, meaning no captures or pawn moves have occurred since this position was set.
+•	It’s the first move of the game.
 
 **Hints**
 You don't need to test that every possible square for each piece is accessible

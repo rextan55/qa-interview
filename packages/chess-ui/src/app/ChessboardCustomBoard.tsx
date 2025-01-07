@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 import { Chess } from 'chess.js';
 import { useSearchParams } from 'react-router';
 
-const singlePieceFEN = '8/8/8/3P4/8/8/8/8 w - - 0 1';
-
 export const ChessboardCustomBoard = () => {
   const [game, setGame] = useState(new Chess());
   const [isReady, setReady] = useState(false);
@@ -47,7 +45,7 @@ export const ChessboardCustomBoard = () => {
         height: '500px',
       }}
     >
-      <Chessboard position={game.fen()} onPieceDrop={onDrop} />;
+      <Chessboard position={game.fen()} onPieceDrop={onDrop} />
     </div>
   );
 };
