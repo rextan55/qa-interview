@@ -11,9 +11,13 @@ a 1 hour pairing session with other QA Engineers to review and extend your work 
 
 ## Tech Stack
 React UI
+
 Emotion CSS
+
 Typescript
+
 NX Monorepo
+
 Playwright E2E
 
 ## Prerequisites
