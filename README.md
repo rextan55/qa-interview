@@ -21,7 +21,9 @@ NX Monorepo
 Playwright E2E
 
 ## Prerequisites
+
 Package Manager: pnpm 8.15.8
+
 Node: 20.14.0 (LTS)
 
 ## Instructions
