@@ -1,0 +1,60 @@
+# Chorus QA Interview
+
+## About this Interview
+
+Welcome to Chorus Engineering's QA Interview project!
+
+We're looking for QA Engineers who are experienced, passionate, and obsessed with strong systems and high productivity.
+
+The goal of this interview is to identify your skills as a QA professional, and is followed by
+a 1 hour pairing session with other QA Engineers to review and extend your work by writing more tests together.
+
+## Tech Stack
+React UI
+Emotion CSS
+Typescript
+NX Monorepo
+Playwright E2E
+
+## Prerequisites
+Package Manager: pnpm 8.15.8
+Node: 20.14.0 (LTS)
+
+## Instructions
+1. [Install pnpm](https://pnpm.io/installation)
+2. [Install nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+- Our recommendation: use brew and run `brew install nvm`
+  Brew Install Instructions 
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+3. Run `pnpm install`
+4. Run `pm2 start`
+
+The API and React server will automatically watch for changes. You can manage start/stop using `pm2`
+
+Use `pm2 stop all` to stop the servers.
+Use `pm2 delete all` to delete the entry from the pm2 process list.
+
+### Troubleshooting
+
+> I can't execute pm2!
+
+pm2 is part of the devDependencies, so when you install the dependencies, you should be able to
+execute the binary from node_modules.
+
+Either use `pnpm pm2` or add `node_modules/.bin` to your `PATH`.
+
+
+## Prompt
+
+Lets QA Chess!
+
+We want to QA our Chess source code. 
+
+The source code allows the user to move White pieces, and the computer will move black pieces.
+
+Your tests should do the following:
+1. Test that Black pieces are not making illegal moves.
+2. Test that White pieces are not making illegal moves.
+3. Ensure that all possible chess movements are 100% covered.
