@@ -44,6 +44,8 @@ The API and React server will automatically watch for changes. You can manage st
 Use `pm2 stop all` to stop the servers.
 Use `pm2 delete all` to delete the entry from the pm2 process list.
 
+5. Run your tests with `playwright test` from `/chess-ui-e2e` directory
+
 ### Troubleshooting
 
 > I can't execute pm2!
