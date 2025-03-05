@@ -103,3 +103,8 @@ Summary of Meaning
 **Hints**
 
 You don't need to test that every possible square for each piece is accessible
+
+## Submission Criteria
+All of your work should be located in a Github Repo.
+
+Ensure your repo is public, and submit the URL back to the hiring manager.
